@@ -30,7 +30,7 @@ O projeto investiga desafios e soluções para o uso de dados abertos educaciona
 
 ### Experimento 4 
 - **Objetivo:** Avaliar o impacto da substituição do quase-identificador `CO_CURSO` por alternativas.  
-- **Quase-identificadores testados:**  
+- **Conjuntos de Quase-identificadores testados:**  
   - `CO_CINE_AREA_GERAL`  
   - `CO_MUNICIPIO`  
   - `CO_UF`  
@@ -43,6 +43,28 @@ O projeto investiga desafios e soluções para o uso de dados abertos educaciona
   - Weight of Evidence (WoE) e Information Value (IV)  
 - **Descrição:** Complementam a análise da relação entre variáveis e o atributo-alvo.
 
+### Experimento 6 
+- **Objetivo:** Avaliar a aplicação da Suavização de Laplace as métricas Weight of Evidence (WoE) e Information Value (IV), aplicadas no Experimento 5.  
+- **Descrição:** Mitigar problemas recorrentes no cálculo do WoE, especialmente aqueles relacionados a divisões por zero.
+
+### Experimento 7 
+- **Objetivo:** Avaliar o impacto da substituição dos insghts obtidos nos Experimentos Anteriores, com a substituição de data de nascimento, por FAIXA_IBGE e a remoção do código de município de nasicmento do estudante.  
+- **Conjuntos de Quase-identificadores testados:**  
+  - `CO_CINE_AREA_GERAL`  
+  - `CO_MUNICIPIO`  
+  - `CO_UF`  
+  - `CO_IES`  
+  - `TP_CATEGORIA_ADMINISTRATIVA`  
+
+### Experimento 8 
+- **Objetivo:** Aprofundar a análise da substituição do código do curso pelos códigos CINE Brasil.
+- **Conjuntos de Quase-identificadores testados:**  
+  - `CO_CINE_AREA_GERAL`  
+  - `CO_CINE_AREA_ESPECIFICA`  
+  - `CO_CINE_AREA_DETALHADA`  
+  - `CO_CINE_ROTULO`  
+
 ---
 
 > **Observação:** Todos os códigos foram desenvolvidos e testados no **Google Colab**, sendo disponibilizados aqui diretamente do ambiente.
+> Este trabalho tem sido desenvolvido com o apoio do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e do Instituto Ipê, que viabilizaram sua execução por meio de financiamento à pesquisa, no âmbito do programa PIBIC.
